@@ -2,7 +2,6 @@
 {% set version = "12.9.79" %}
 {% set cuda_version = "12.9" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
-{% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set platform = "windows-x86_64" %}  # [win]
 {% set extension = "tar.xz" %}  # [not win]
 {% set extension = "zip" %}  # [win]
@@ -19,7 +18,7 @@ source:
 build:
   number: 0
   binary_relocation: false
-  skip: true  # [osx or aarch64 or ppc64le]
+  skip: true  # [osx or aarch64]
 
 requirements:
   build:
@@ -51,11 +50,13 @@ about:
   license_file: LICENSE
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
+  license_family: Other
   summary: NVIDIA Visual Profiler to visualize and optimize the performance of your application.
   description: |
     NVIDIA Visual Profiler to visualize and optimize the performance of your
     application.
   doc_url: https://docs.nvidia.com/cuda/profiler-users-guide/index.html
+  dev_url: https://docs.nvidia.com/cuda/profiler-users-guide/index.html
 
 extra:
   recipe-maintainers:
