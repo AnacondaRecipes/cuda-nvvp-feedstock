@@ -5,6 +5,5 @@
 
 # staging_channel_upload_target: ctk-12.9-build-4
 
-channels:
-  # - https://staging.continuum.io/pbp/ctk-12.9-build-4
-  - https://staging.continuum.io/pbp/fs/cuda-nvprof-feedstock/pr3/b402d9a
+# channels:
+# - https://staging.continuum.io/pbp/ctk-12.9-build-4
